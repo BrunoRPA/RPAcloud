@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.10.16 on darwin)" generated="2025-03-07T09:50:38.230478" rpa="true" schemaversion="5">
+<suite id="s1" name="Task" source="/Users/bruno/Desktop/nco/AutoForm/base/task.robot">
+<test id="s1-t1" name="Complete the challenge" line="13">
+<kw name="Start the challenge">
+<kw name="New Browser" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:38.659683" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/bruno/Desktop/nco/AutoForm/base/browser/traces/temp/d1a23519-05f9-4b59-8fb8-1551c8d25128"}</msg>
+<msg time="2025-03-07T09:50:38.675747" level="INFO">Starting Browser process /Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/index.js using port 63285</msg>
+<msg time="2025-03-07T09:50:38.675893" level="INFO">Node startup parameters: ['node', '/Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/index.js', '63285']</msg>
+<msg time="2025-03-07T09:50:41.824598" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/bruno/Desktop/nco/AutoForm/base/browser/traces/temp/d1a23519-05f9-4b59-8fb8-1551c8d25128"}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-03-07T09:50:38.659361" elapsed="3.165420"/>
+</kw>
+<kw name="New Page" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:46.382789" level="INFO">Successfully initialized new page object and opened url: http://rpachallenge.com/</msg>
+<msg time="2025-03-07T09:50:46.383073" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://rpachallenge.com/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-03-07T09:50:41.824976" elapsed="4.558536"/>
+</kw>
+<kw name="Download" owner="RPA.HTTP">
+<msg time="2025-03-07T09:50:46.385357" level="INFO">Creating a new HTTP session</msg>
+<msg time="2025-03-07T09:50:46.385446" level="INFO">Creating Session using : alias=rpasession_alias.httprpachallenge.com, url=http://rpachallenge.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<arg>http://rpachallenge.com/assets/downloadFiles/challenge.xlsx</arg>
+<arg>overwrite=True</arg>
+<doc>An alias for the ``HTTP Get`` keyword.</doc>
+<status status="PASS" start="2025-03-07T09:50:46.384193" elapsed="1.425082"/>
+</kw>
+<kw name="Click" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:47.809746" level="INFO">Clicks the element 'button'.</msg>
+<arg>button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:47.809433" elapsed="0.079645"/>
+</kw>
+<status status="PASS" start="2025-03-07T09:50:38.658841" elapsed="9.230370"/>
+</kw>
+<kw name="Fill the forms">
+<kw name="Get the list of people from the Excel file">
+<kw name="Open Workbook" owner="RPA.Excel.Files">
+<msg time="2025-03-07T09:50:47.937556" level="INFO">Opened workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x104c01ea0&gt;</msg>
+<arg>challenge.xlsx</arg>
+<doc>Open an existing Excel workbook.</doc>
+<status status="PASS" start="2025-03-07T09:50:47.889977" elapsed="0.047666"/>
+</kw>
+<kw name="Read Worksheet As Table" owner="RPA.Excel.Files">
+<msg time="2025-03-07T09:50:47.955108" level="INFO">Created table: Table(columns=['First Name', 'Last Name', 'Company Name', 'Role in Company', 'Address', 'Email', 'Phone Number'], rows=10)</msg>
+<msg time="2025-03-07T09:50:47.955304" level="INFO">${table} = Table(columns=['First Name', 'Last Name', 'Company Name', 'Role in Company', 'Address', 'Email', 'Phone Number'], rows=10)</msg>
+<var>${table}</var>
+<arg>header=True</arg>
+<doc>Read the contents of a worksheet into a Table container. Allows
+sorting/filtering/manipulating using the ``RPA.Tables`` library.</doc>
+<status status="PASS" start="2025-03-07T09:50:47.937789" elapsed="0.017540"/>
+</kw>
+<kw name="Close Workbook" owner="RPA.Excel.Files">
+<msg time="2025-03-07T09:50:47.955574" level="INFO">Closing workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x104c01ea0&gt;</msg>
+<doc>Close the active workbook.</doc>
+<status status="PASS" start="2025-03-07T09:50:47.955439" elapsed="0.000168"/>
+</kw>
+<return>
+<value>${table}</value>
+<status status="PASS" start="2025-03-07T09:50:47.955645" elapsed="0.000060"/>
+</return>
+<msg time="2025-03-07T09:50:47.955800" level="INFO">${people} = Table(columns=['First Name', 'Last Name', 'Company Name', 'Role in Company', 'Address', 'Email', 'Phone Number'], rows=10)</msg>
+<var>${people}</var>
+<status status="PASS" start="2025-03-07T09:50:47.889735" elapsed="0.066081"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Fill and submit the form">
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:47.956581" level="INFO">Fills the text 'John' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelFirstName"]</arg>
+<arg>${person}[First Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:47.956312" elapsed="0.008003"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:47.964811" level="INFO">Fills the text 'Smith' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelLastName"]</arg>
+<arg>${person}[Last Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:47.964469" elapsed="0.005090"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:47.969997" level="INFO">Fills the text 'IT Solutions' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelCompanyName"]</arg>
+<arg>${person}[Company Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:47.969687" elapsed="0.004365"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:47.974456" level="INFO">Fills the text 'Analyst' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelRole"]</arg>
+<arg>${person}[Role in Company]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:47.974161" elapsed="0.004707"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:47.979342" level="INFO">Fills the text '98 North Road' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelAddress"]</arg>
+<arg>${person}[Address]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:47.979011" elapsed="0.004762"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:47.984146" level="INFO">Fills the text 'jsmith@itsolutions.co.uk' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelEmail"]</arg>
+<arg>${person}[Email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:47.983880" elapsed="0.003771"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:47.987988" level="INFO">Fills the text '40716543298' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelPhone"]</arg>
+<arg>${person}[Phone Number]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:47.987743" elapsed="0.003745"/>
+</kw>
+<kw name="Click" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:47.992149" level="INFO">Clicks the element 'input[type=submit]'.</msg>
+<arg>input[type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:47.991703" elapsed="0.038464"/>
+</kw>
+<arg>${person}</arg>
+<status status="PASS" start="2025-03-07T09:50:47.956133" elapsed="0.074138"/>
+</kw>
+<var name="${person}">{'First Name': 'John', 'Last Name': 'Smith', 'Company Name': 'IT Solutions', 'Role in Company': 'Analyst', 'Address': '98 North Road', 'Email': 'jsmith@itsolutions.co.uk', 'Phone Number': 40716543298}</var>
+<status status="PASS" start="2025-03-07T09:50:47.956026" elapsed="0.074278"/>
+</iter>
+<iter>
+<kw name="Fill and submit the form">
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.031091" level="INFO">Fills the text 'Jane' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelFirstName"]</arg>
+<arg>${person}[First Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.030808" elapsed="0.003844"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.035048" level="INFO">Fills the text 'Dorsey' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelLastName"]</arg>
+<arg>${person}[Last Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.034768" elapsed="0.003767"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.038882" level="INFO">Fills the text 'MediCare' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelCompanyName"]</arg>
+<arg>${person}[Company Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.038634" elapsed="0.004570"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.043907" level="INFO">Fills the text 'Medical Engineer' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelRole"]</arg>
+<arg>${person}[Role in Company]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.043391" elapsed="0.004380"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.048119" level="INFO">Fills the text '11 Crown Street' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelAddress"]</arg>
+<arg>${person}[Address]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.047868" elapsed="0.003425"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.051681" level="INFO">Fills the text 'jdorsey@mc.com' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelEmail"]</arg>
+<arg>${person}[Email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.051401" elapsed="0.003056"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.054781" level="INFO">Fills the text '40791345621' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelPhone"]</arg>
+<arg>${person}[Phone Number]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.054544" elapsed="0.003246"/>
+</kw>
+<kw name="Click" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.058280" level="INFO">Clicks the element 'input[type=submit]'.</msg>
+<arg>input[type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.057944" elapsed="0.038448"/>
+</kw>
+<arg>${person}</arg>
+<status status="PASS" start="2025-03-07T09:50:48.030587" elapsed="0.065913"/>
+</kw>
+<var name="${person}">{'First Name': 'Jane', 'Last Name': 'Dorsey', 'Company Name': 'MediCare', 'Role in Company': 'Medical Engineer', 'Address': '11 Crown Street', 'Email': 'jdorsey@mc.com', 'Phone Number': 40791345621}</var>
+<status status="PASS" start="2025-03-07T09:50:48.030410" elapsed="0.066125"/>
+</iter>
+<iter>
+<kw name="Fill and submit the form">
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.097360" level="INFO">Fills the text 'Albert' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelFirstName"]</arg>
+<arg>${person}[First Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.097067" elapsed="0.003523"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.101067" level="INFO">Fills the text 'Kipling' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelLastName"]</arg>
+<arg>${person}[Last Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.100725" elapsed="0.003389"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.104483" level="INFO">Fills the text 'Waterfront' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelCompanyName"]</arg>
+<arg>${person}[Company Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.104218" elapsed="0.003168"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.107887" level="INFO">Fills the text 'Accountant' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelRole"]</arg>
+<arg>${person}[Role in Company]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.107506" elapsed="0.004037"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.111935" level="INFO">Fills the text '22 Guild Street' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelAddress"]</arg>
+<arg>${person}[Address]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.111652" elapsed="0.003358"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.115378" level="INFO">Fills the text 'kipling@waterfront.com' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelEmail"]</arg>
+<arg>${person}[Email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.115113" elapsed="0.003230"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.118678" level="INFO">Fills the text '40735416854' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelPhone"]</arg>
+<arg>${person}[Phone Number]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.118432" elapsed="0.003081"/>
+</kw>
+<kw name="Click" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.121853" level="INFO">Clicks the element 'input[type=submit]'.</msg>
+<arg>input[type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.121642" elapsed="0.024776"/>
+</kw>
+<arg>${person}</arg>
+<status status="PASS" start="2025-03-07T09:50:48.096832" elapsed="0.049681"/>
+</kw>
+<var name="${person}">{'First Name': 'Albert', 'Last Name': 'Kipling', 'Company Name': 'Waterfront', 'Role in Company': 'Accountant', 'Address': '22 Guild Street', 'Email': 'kipling@waterfront.com', 'Phone Number': 4073541...</var>
+<status status="PASS" start="2025-03-07T09:50:48.096645" elapsed="0.049899"/>
+</iter>
+<iter>
+<kw name="Fill and submit the form">
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.147307" level="INFO">Fills the text 'Michael' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelFirstName"]</arg>
+<arg>${person}[First Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.147039" elapsed="0.003416"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.150847" level="INFO">Fills the text 'Robertson' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelLastName"]</arg>
+<arg>${person}[Last Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.150564" elapsed="0.003343"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.154265" level="INFO">Fills the text 'MediCare' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelCompanyName"]</arg>
+<arg>${person}[Company Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.154006" elapsed="0.003217"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.157783" level="INFO">Fills the text 'IT Specialist' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelRole"]</arg>
+<arg>${person}[Role in Company]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.157377" elapsed="0.004167"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.161938" level="INFO">Fills the text '17 Farburn Terrace' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelAddress"]</arg>
+<arg>${person}[Address]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.161655" elapsed="0.003245"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.165267" level="INFO">Fills the text 'mrobertson@mc.com' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelEmail"]</arg>
+<arg>${person}[Email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.165001" elapsed="0.002996"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.168318" level="INFO">Fills the text '40733652145' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelPhone"]</arg>
+<arg>${person}[Phone Number]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.168085" elapsed="0.002820"/>
+</kw>
+<kw name="Click" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.171186" level="INFO">Clicks the element 'input[type=submit]'.</msg>
+<arg>input[type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.170988" elapsed="0.025403"/>
+</kw>
+<arg>${person}</arg>
+<status status="PASS" start="2025-03-07T09:50:48.146820" elapsed="0.049665"/>
+</kw>
+<var name="${person}">{'First Name': 'Michael', 'Last Name': 'Robertson', 'Company Name': 'MediCare', 'Role in Company': 'IT Specialist', 'Address': '17 Farburn Terrace', 'Email': 'mrobertson@mc.com', 'Phone Number': 40733...</var>
+<status status="PASS" start="2025-03-07T09:50:48.146648" elapsed="0.049867"/>
+</iter>
+<iter>
+<kw name="Fill and submit the form">
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.197296" level="INFO">Fills the text 'Doug' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelFirstName"]</arg>
+<arg>${person}[First Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.197012" elapsed="0.003451"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.200870" level="INFO">Fills the text 'Derrick' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelLastName"]</arg>
+<arg>${person}[Last Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.200577" elapsed="0.003329"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.204239" level="INFO">Fills the text 'Timepath Inc.' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelCompanyName"]</arg>
+<arg>${person}[Company Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.203998" elapsed="0.003094"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.207530" level="INFO">Fills the text 'Analyst' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelRole"]</arg>
+<arg>${person}[Role in Company]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.207190" elapsed="0.003564"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.211157" level="INFO">Fills the text '99 Shire Oak Road' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelAddress"]</arg>
+<arg>${person}[Address]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.210872" elapsed="0.003202"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.214448" level="INFO">Fills the text 'dderrick@timepath.co.uk' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelEmail"]</arg>
+<arg>${person}[Email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.214169" elapsed="0.003231"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.217740" level="INFO">Fills the text '40799885412' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelPhone"]</arg>
+<arg>${person}[Phone Number]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.217489" elapsed="0.003022"/>
+</kw>
+<kw name="Click" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.220816" level="INFO">Clicks the element 'input[type=submit]'.</msg>
+<arg>input[type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.220619" elapsed="0.025577"/>
+</kw>
+<arg>${person}</arg>
+<status status="PASS" start="2025-03-07T09:50:48.196795" elapsed="0.049500"/>
+</kw>
+<var name="${person}">{'First Name': 'Doug', 'Last Name': 'Derrick', 'Company Name': 'Timepath Inc.', 'Role in Company': 'Analyst', 'Address': '99 Shire Oak Road', 'Email': 'dderrick@timepath.co.uk', 'Phone Number': 407998...</var>
+<status status="PASS" start="2025-03-07T09:50:48.196624" elapsed="0.049707"/>
+</iter>
+<iter>
+<kw name="Fill and submit the form">
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.247107" level="INFO">Fills the text 'Jessie' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelFirstName"]</arg>
+<arg>${person}[First Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.246830" elapsed="0.003346"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.250566" level="INFO">Fills the text 'Marlowe' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelLastName"]</arg>
+<arg>${person}[Last Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.250287" elapsed="0.003235"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.253866" level="INFO">Fills the text 'Aperture Inc.' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelCompanyName"]</arg>
+<arg>${person}[Company Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.253615" elapsed="0.003003"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.256944" level="INFO">Fills the text 'Scientist' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelRole"]</arg>
+<arg>${person}[Role in Company]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.256703" elapsed="0.003651"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.260856" level="INFO">Fills the text '27 Cheshire Street' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelAddress"]</arg>
+<arg>${person}[Address]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.260480" elapsed="0.003633"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.264477" level="INFO">Fills the text 'jmarlowe@aperture.us' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelEmail"]</arg>
+<arg>${person}[Email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.264209" elapsed="0.003299"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.267835" level="INFO">Fills the text '40733154268' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelPhone"]</arg>
+<arg>${person}[Phone Number]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.267597" elapsed="0.002949"/>
+</kw>
+<kw name="Click" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.270841" level="INFO">Clicks the element 'input[type=submit]'.</msg>
+<arg>input[type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.270632" elapsed="0.024808"/>
+</kw>
+<arg>${person}</arg>
+<status status="PASS" start="2025-03-07T09:50:48.246609" elapsed="0.048915"/>
+</kw>
+<var name="${person}">{'First Name': 'Jessie', 'Last Name': 'Marlowe', 'Company Name': 'Aperture Inc.', 'Role in Company': 'Scientist', 'Address': '27 Cheshire Street', 'Email': 'jmarlowe@aperture.us', 'Phone Number': 4073...</var>
+<status status="PASS" start="2025-03-07T09:50:48.246439" elapsed="0.049115"/>
+</iter>
+<iter>
+<kw name="Fill and submit the form">
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.296282" level="INFO">Fills the text 'Stan' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelFirstName"]</arg>
+<arg>${person}[First Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.296012" elapsed="0.006287"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.303624" level="INFO">Fills the text 'Hamm' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelLastName"]</arg>
+<arg>${person}[Last Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.302442" elapsed="0.004584"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.307489" level="INFO">Fills the text 'Sugarwell' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelCompanyName"]</arg>
+<arg>${person}[Company Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.307143" elapsed="0.003926"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.311453" level="INFO">Fills the text 'Advisor' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelRole"]</arg>
+<arg>${person}[Role in Company]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.311174" elapsed="0.003057"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.314551" level="INFO">Fills the text '10 Dam Road' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelAddress"]</arg>
+<arg>${person}[Address]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.314319" elapsed="0.003061"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.317724" level="INFO">Fills the text 'shamm@sugarwell.org' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelEmail"]</arg>
+<arg>${person}[Email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.317474" elapsed="0.002905"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.320690" level="INFO">Fills the text '40712462257' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelPhone"]</arg>
+<arg>${person}[Phone Number]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.320461" elapsed="0.002908"/>
+</kw>
+<kw name="Click" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.323755" level="INFO">Clicks the element 'input[type=submit]'.</msg>
+<arg>input[type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.323488" elapsed="0.038917"/>
+</kw>
+<arg>${person}</arg>
+<status status="PASS" start="2025-03-07T09:50:48.295801" elapsed="0.066716"/>
+</kw>
+<var name="${person}">{'First Name': 'Stan', 'Last Name': 'Hamm', 'Company Name': 'Sugarwell', 'Role in Company': 'Advisor', 'Address': '10 Dam Road', 'Email': 'shamm@sugarwell.org', 'Phone Number': 40712462257}</var>
+<status status="PASS" start="2025-03-07T09:50:48.295647" elapsed="0.066903"/>
+</iter>
+<iter>
+<kw name="Fill and submit the form">
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.363397" level="INFO">Fills the text 'Michelle' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelFirstName"]</arg>
+<arg>${person}[First Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.363101" elapsed="0.003590"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.367141" level="INFO">Fills the text 'Norton' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelLastName"]</arg>
+<arg>${person}[Last Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.366820" elapsed="0.003209"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.370429" level="INFO">Fills the text 'Aperture Inc.' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelCompanyName"]</arg>
+<arg>${person}[Company Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.370144" elapsed="0.002961"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.373455" level="INFO">Fills the text 'Scientist' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelRole"]</arg>
+<arg>${person}[Role in Company]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.373200" elapsed="0.003325"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.376945" level="INFO">Fills the text '13 White Rabbit Street' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelAddress"]</arg>
+<arg>${person}[Address]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.376634" elapsed="0.003209"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.380199" level="INFO">Fills the text 'mnorton@aperture.us' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelEmail"]</arg>
+<arg>${person}[Email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.379939" elapsed="0.003023"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.383287" level="INFO">Fills the text '40731254562' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelPhone"]</arg>
+<arg>${person}[Phone Number]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.383049" elapsed="0.002877"/>
+</kw>
+<kw name="Click" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.386218" level="INFO">Clicks the element 'input[type=submit]'.</msg>
+<arg>input[type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.386014" elapsed="0.028313"/>
+</kw>
+<arg>${person}</arg>
+<status status="PASS" start="2025-03-07T09:50:48.362857" elapsed="0.051579"/>
+</kw>
+<var name="${person}">{'First Name': 'Michelle', 'Last Name': 'Norton', 'Company Name': 'Aperture Inc.', 'Role in Company': 'Scientist', 'Address': '13 White Rabbit Street', 'Email': 'mnorton@aperture.us', 'Phone Number': ...</var>
+<status status="PASS" start="2025-03-07T09:50:48.362664" elapsed="0.051806"/>
+</iter>
+<iter>
+<kw name="Fill and submit the form">
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.415280" level="INFO">Fills the text 'Stacy' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelFirstName"]</arg>
+<arg>${person}[First Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.414999" elapsed="0.004252"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.419730" level="INFO">Fills the text 'Shelby' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelLastName"]</arg>
+<arg>${person}[Last Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.419410" elapsed="0.003337"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.423127" level="INFO">Fills the text 'TechDev' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelCompanyName"]</arg>
+<arg>${person}[Company Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.422843" elapsed="0.003938"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.428955" level="INFO">Fills the text 'HR Manager' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelRole"]</arg>
+<arg>${person}[Role in Company]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.427950" elapsed="0.004590"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.432975" level="INFO">Fills the text '19 Pineapple Boulevard' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelAddress"]</arg>
+<arg>${person}[Address]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.432661" elapsed="0.003397"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.436434" level="INFO">Fills the text 'sshelby@techdev.com' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelEmail"]</arg>
+<arg>${person}[Email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.436165" elapsed="0.003096"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.439616" level="INFO">Fills the text '40741785214' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelPhone"]</arg>
+<arg>${person}[Phone Number]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.439356" elapsed="0.003874"/>
+</kw>
+<kw name="Click" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.443744" level="INFO">Clicks the element 'input[type=submit]'.</msg>
+<arg>input[type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.443426" elapsed="0.036543"/>
+</kw>
+<arg>${person}</arg>
+<status status="PASS" start="2025-03-07T09:50:48.414767" elapsed="0.065304"/>
+</kw>
+<var name="${person}">{'First Name': 'Stacy', 'Last Name': 'Shelby', 'Company Name': 'TechDev', 'Role in Company': 'HR Manager', 'Address': '19 Pineapple Boulevard', 'Email': 'sshelby@techdev.com', 'Phone Number': 40741785...</var>
+<status status="PASS" start="2025-03-07T09:50:48.414581" elapsed="0.065523"/>
+</iter>
+<iter>
+<kw name="Fill and submit the form">
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.480926" level="INFO">Fills the text 'Lara' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelFirstName"]</arg>
+<arg>${person}[First Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.480637" elapsed="0.003397"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.484458" level="INFO">Fills the text 'Palmer' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelLastName"]</arg>
+<arg>${person}[Last Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.484163" elapsed="0.003141"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.487655" level="INFO">Fills the text 'Timepath Inc.' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelCompanyName"]</arg>
+<arg>${person}[Company Name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.487399" elapsed="0.003024"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.490865" level="INFO">Fills the text 'Programmer' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelRole"]</arg>
+<arg>${person}[Role in Company]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.490534" elapsed="0.004002"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.494991" level="INFO">Fills the text '87 Orange Street' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelAddress"]</arg>
+<arg>${person}[Address]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.494674" elapsed="0.003322"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.498370" level="INFO">Fills the text 'lpalmer@timepath.co.uk' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelEmail"]</arg>
+<arg>${person}[Email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.498106" elapsed="0.003144"/>
+</kw>
+<kw name="Fill Text" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.501587" level="INFO">Fills the text '40731653845' in the given field.</msg>
+<arg>//input[@ng-reflect-name="labelPhone"]</arg>
+<arg>${person}[Phone Number]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.501338" elapsed="0.002988"/>
+</kw>
+<kw name="Click" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.504664" level="INFO">Clicks the element 'input[type=submit]'.</msg>
+<arg>input[type=submit]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.504425" elapsed="0.024720"/>
+</kw>
+<arg>${person}</arg>
+<status status="PASS" start="2025-03-07T09:50:48.480404" elapsed="0.048839"/>
+</kw>
+<var name="${person}">{'First Name': 'Lara', 'Last Name': 'Palmer', 'Company Name': 'Timepath Inc.', 'Role in Company': 'Programmer', 'Address': '87 Orange Street', 'Email': 'lpalmer@timepath.co.uk', 'Phone Number': 407316...</var>
+<status status="PASS" start="2025-03-07T09:50:48.480213" elapsed="0.049061"/>
+</iter>
+<var>${person}</var>
+<value>@{people}</value>
+<status status="PASS" start="2025-03-07T09:50:47.955857" elapsed="0.573453"/>
+</for>
+<status status="PASS" start="2025-03-07T09:50:47.889428" elapsed="0.639933"/>
+</kw>
+<kw name="Collect the results">
+<kw name="Take Screenshot" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.623842" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/css%3Adiv.congratulations.png" target="_blank"&gt;&lt;img src="browser/screenshot/css%3Adiv.congratulations.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>css:div.congratulations</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.529806" elapsed="0.094186"/>
+</kw>
+<kw name="Close Browser" owner="RPA.Browser.Playwright">
+<msg time="2025-03-07T09:50:48.819757" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-07T09:50:48.624146" elapsed="0.195764"/>
+</kw>
+<status status="PASS" start="2025-03-07T09:50:48.529531" elapsed="0.290501"/>
+</kw>
+<status status="PASS" start="2025-03-07T09:50:38.658476" elapsed="10.161750"/>
+</test>
+<doc>Robot to solve the first challenge at rpachallenge.com,
+which consists of filling a form that randomly rearranges
+itself for ten times, with data taken from a provided
+Microsoft Excel file.</doc>
+<status status="PASS" start="2025-03-07T09:50:38.231247" elapsed="10.592941"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task" id="s1" pass="1" fail="0" skip="0">Task</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

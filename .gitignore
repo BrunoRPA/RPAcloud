@@ -1,0 +1,14 @@
+.idea/
+.DS_Store
+__pycache__
+base/output
+base/Pipfile.lock
+log.html
+report.html
+output.xml
+.env
+*.pyc
+venv/*
+base/playwright-log.txt
+base/requirements.txt
+.config

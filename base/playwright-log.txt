@@ -1,0 +1,294 @@
+{"level":30,"time":"2025-03-07T12:50:38.955Z","pid":67858,"hostname":"192.168.1.11","msg":"Listening on 63285"}
+(node:67858) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-03-07T12:50:40.048Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-03-07T12:50:41.823Z","pid":67858,"hostname":"192.168.1.11","msg":"Adding browser to stack: chromium, version: 133.0.6943.16"}
+{"level":30,"time":"2025-03-07T12:50:41.823Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-03-07T12:50:41.823Z","pid":67858,"hostname":"192.168.1.11","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-03-07T12:50:41.826Z","pid":67858,"hostname":"192.168.1.11","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-03-07T12:50:41.826Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-03-07T12:50:41.830Z","pid":67858,"hostname":"192.168.1.11","msg":"Changed active context"}
+{"level":30,"time":"2025-03-07T12:50:42.208Z","pid":67858,"hostname":"192.168.1.11","msg":"Video path: undefined"}
+{"level":30,"time":"2025-03-07T12:50:42.208Z","pid":67858,"hostname":"192.168.1.11","msg":"Changed active page"}
+{"level":30,"time":"2025-03-07T12:50:46.380Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method newPage"}
+{"level":30,"time":"2025-03-07T12:50:47.811Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-07T12:50:47.811Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with button in page."}
+{"level":30,"time":"2025-03-07T12:50:47.888Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method click"}
+{"level":30,"time":"2025-03-07T12:50:47.957Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:47.958Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelFirstName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:47.963Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:47.965Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:47.965Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelLastName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:47.969Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:47.970Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:47.970Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelCompanyName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:47.973Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:47.975Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:47.975Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelRole\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:47.978Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:47.980Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:47.980Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelAddress\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:47.982Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:47.984Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:47.984Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelEmail\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:47.987Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:47.988Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:47.988Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelPhone\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:47.991Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:47.992Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-07T12:50:47.992Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with input[type=submit] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.029Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.031Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.031Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelFirstName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.034Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.035Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.035Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelLastName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.038Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.039Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.039Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelCompanyName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.042Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.044Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.044Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelRole\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.047Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.048Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.048Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelAddress\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.050Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.052Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.052Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelEmail\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.054Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.055Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.055Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelPhone\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.057Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.059Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.059Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with input[type=submit] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.095Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.098Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.098Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelFirstName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.100Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.101Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.101Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelLastName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.103Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.105Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.105Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelCompanyName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.107Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.108Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.108Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelRole\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.111Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.112Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.112Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelAddress\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.114Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.115Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.115Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelEmail\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.118Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.119Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.119Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelPhone\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.121Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.122Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.122Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with input[type=submit] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.146Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.148Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.148Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelFirstName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.150Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.151Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.151Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelLastName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.153Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.154Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.154Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelCompanyName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.156Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.158Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.158Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelRole\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.161Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.162Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.162Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelAddress\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.164Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.165Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.165Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelEmail\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.167Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.168Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.168Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelPhone\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.170Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.171Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.171Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with input[type=submit] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.196Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.197Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.198Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelFirstName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.200Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.201Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.201Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelLastName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.203Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.204Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.204Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelCompanyName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.206Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.208Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.208Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelRole\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.210Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.211Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.211Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelAddress\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.213Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.214Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.214Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelEmail\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.217Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.218Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.218Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelPhone\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.220Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.221Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.221Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with input[type=submit] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.245Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.247Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.247Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelFirstName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.249Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.251Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.251Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelLastName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.253Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.254Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.254Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelCompanyName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.256Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.257Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.257Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelRole\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.260Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.261Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.261Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelAddress\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.263Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.265Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.265Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelEmail\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.267Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.268Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.268Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelPhone\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.270Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.271Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.271Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with input[type=submit] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.295Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.296Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.296Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelFirstName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.301Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.304Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.304Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelLastName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.306Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.308Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.308Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelCompanyName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.310Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.311Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.311Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelRole\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.313Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.315Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.315Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelAddress\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.317Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.318Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.318Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelEmail\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.320Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.321Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.321Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelPhone\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.323Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.324Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.324Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with input[type=submit] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.361Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.364Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.364Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelFirstName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.366Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.367Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.367Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelLastName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.369Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.370Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.371Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelCompanyName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.372Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.374Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.374Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelRole\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.376Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.377Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.377Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelAddress\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.379Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.380Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.380Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelEmail\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.382Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.383Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.383Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelPhone\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.385Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.386Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.386Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with input[type=submit] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.413Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.416Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.416Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelFirstName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.418Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.420Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.420Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelLastName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.422Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.423Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.423Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelCompanyName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.426Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.429Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.429Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelRole\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.432Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.433Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.433Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelAddress\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.435Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.437Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.437Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelEmail\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.439Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.440Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.440Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelPhone\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.442Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.444Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.444Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with input[type=submit] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.479Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.481Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.481Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelFirstName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.483Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.485Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.485Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelLastName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.487Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.488Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.488Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelCompanyName\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.490Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.491Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.491Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelRole\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.494Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.495Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.495Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelAddress\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.497Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.498Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.498Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelEmail\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.500Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.502Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.502Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with //input[@ng-reflect-name=\"labelPhone\"] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.504Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-07T12:50:48.505Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.505Z","pid":67858,"hostname":"192.168.1.11","msg":"Strict mode is enabled, find Locator with input[type=submit] in page."}
+{"level":30,"time":"2025-03-07T12:50:48.528Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method click"}
+{"level":30,"time":"2025-03-07T12:50:48.530Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-03-07T12:50:48.531Z","pid":67858,"hostname":"192.168.1.11","Take screenshot with options: ":{"path":"/Users/bruno/Desktop/nco/AutoForm/base/browser/screenshot/css:div.congratulations.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-03-07T12:50:48.623Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-03-07T12:50:48.625Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-03-07T12:50:48.627Z","pid":67858,"hostname":"192.168.1.11","msg":"Removed page=05c50b60-6255-40fd-95eb-2d78a6a7dfaa from context=a3102348-b5c1-48df-81e4-3260735d32e3 page stack"}
+{"level":30,"time":"2025-03-07T12:50:48.819Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/index.js:12223:15)
+    at PlaywrightServer.getActiveBrowser (/Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/index.js:13119:59)
+    at PlaywrightServer.setTimeout (/Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/index.js:13367:57)
+    at Object.onReceiveHalfClose (/Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:570:31)
+    at BaseServerInterceptingCall.handleEndEvent (/Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:610:14)
+    at ServerHttp2Stream.<anonymous> (/Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:377:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-03-07T12:50:48.823Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T12:50:48.823Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/index.js:12223:15)
+    at PlaywrightServer.getActiveBrowser (/Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/index.js:13119:59)
+    at PlaywrightServer.setTimeout (/Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/index.js:13367:57)
+    at Object.onReceiveHalfClose (/Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:570:31)
+    at BaseServerInterceptingCall.handleEndEvent (/Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:610:14)
+    at ServerHttp2Stream.<anonymous> (/Users/bruno/.pyenv/versions/3.10.16/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:377:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-03-07T12:50:48.826Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T12:50:48.826Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T12:50:48.854Z","pid":67858,"hostname":"192.168.1.11","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-03-07T12:50:48.854Z","pid":67858,"hostname":"192.168.1.11","msg":"End of node method closeAllBrowsers"}
