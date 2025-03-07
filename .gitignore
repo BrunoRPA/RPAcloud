@@ -3,9 +3,9 @@
 __pycache__
 base/output
 base/Pipfile.lock
-log.html
-report.html
-output.xml
+base/log.html
+base/report.html
+base/output.xml
 .env
 *.pyc
 venv/*
