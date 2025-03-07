@@ -1,9 +1,9 @@
 __pycache__
-./base/log.html
-./base/report.html
-./base/output.xml
+base/log.html
+base/report.html
+base/output.xml
 .env
 *.pyc
 venv/*
-./base/playwright-log.txt
+base/playwright-log.txt
 .config
